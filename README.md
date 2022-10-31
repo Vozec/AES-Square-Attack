@@ -24,10 +24,10 @@ print(hexlify(key))
 We can create a dataset :  
 ```python
 encrypted_ds = []
-	for i in range(256):
-		data = bytearray([i,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0])
-		encrypted_ds.append(Encrypt_AES(data))
-    return encrypted_ds
+for i in range(256):
+  data = bytearray([i,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0])
+  encrypted_ds.append(Encrypt_AES(data))
+  return encrypted_ds
 ```
 
 *This tools was inspired by many writings/codes of other people from previous CTF Writeup*
