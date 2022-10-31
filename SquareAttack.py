@@ -10,7 +10,7 @@ class Square_attack:
 
     backup = lambda self, ct, byteGuess, byteIndex: invsbox[ct[byteIndex] ^ byteGuess]
 
-    def Reverse_key(self):
+    def Crack_key(self):
         candidates = [self.Itgr(i) for i in range(16)]
         for roundKey in product(*candidates):
             masterKey = self.Round2Key(roundKey)
